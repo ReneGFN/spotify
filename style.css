@@ -88,3 +88,115 @@ body{
 {
     margin: 21px 8px;
 }
+.playlist{
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #b3b3b3;
+    font-weight: 600px;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: 12px;
+}
+.playlist .playlist-content{
+    display: flex;
+    flex-direction: column;
+}
+.playlist-content .text{
+    padding-bottom: 14px;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+}
+.playlist-content .title{
+    font-weight: bold;
+    font-size: 17px;
+}
+.playlist-content .subtitle{
+    font-weight: 500px;
+    font-size: 12px;
+}
+.playlist-content .playlist-button{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: 120px;
+    height: 37px;
+    font-weight: 800;
+    background-color: #fff;
+    color:#000;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+    border: 0px;
+    margin-top: 12px;
+    text-decoration: none;
+    text-transform: none;
+}
+.sidebar .cookies{
+    margin: 25px 20px;
+
+}
+.sidebar .cookies a{
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+}
+.sidebar .cookies a:hover{
+    text-decoration: underline;   
+}
+.languages .languages-button{
+    align-items: center;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #878787;
+    font-weight: bold;
+    cursor: pointer;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 100px;
+}
+.premium{
+    background: rgb(198,43,147);
+    background: linear-gradient(90deg, rgba(198,43,147,1) 0%, rgba(31,183,214,1) 100%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.premium .text{
+    flex-shrink: 0;
+}
+.premium .premium-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 10px;
+}
+.premium .premium-subtitle{
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.premium .premium-button button {
+    border: 0px;
+    border-radius: 100px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    padding: 14px 30px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
