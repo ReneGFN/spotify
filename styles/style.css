@@ -1,16 +1,15 @@
 body{
     background-color: #000;
+    font-family: var(--font-dm-sans);
 }
-
 .sidebar{
     position:fixed;
     top:0;
     left:0;
     bottom:0;
     padding:12px;
-    width:300px;
+    width:420px;
 }
-
 .sidebar__navigation{
     background-color: #121212;
     border-radius:8px;
@@ -25,7 +24,7 @@ body{
 }
 
 .sidebar__navigation .logo img{
-    width:80px;
+    width: 80px;
 }
 
 .sidebar nav ul{
@@ -36,13 +35,11 @@ body{
 .sidebar ul li{
     padding: 10px 0;
 }
-
 .sidebar nav ul li a{
     color: #b3b3b3;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    font-family: "DM Sans", sans-serif;
+    font-weight: 570;
+    font-size: 16px;
 }
 .library
 {
@@ -52,7 +49,7 @@ body{
     font-size: 14px;
     margin-top: 10px;
     display: flex;
-    width: 300px;
+    width: 420px;
     border-radius: 8px;
     justify-content: space-between;
     flex-direction: column;
@@ -66,12 +63,12 @@ body{
 .library .library_button{
     display: flex;
     margin-right: 10px;
+    margin-left: 12px;
     color: #b3b3b3;
     background-color: transparent;
     border: 0px;
     font-size: 14px;
     font-weight: 700px;
-    font-family: "DM Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -86,7 +83,11 @@ body{
 }
 .library .library_content .fa-plus
 {
-    margin: 21px 8px;
+    margin-right: 17px;
+    margin-left: auto;
+    margin-top: 20px;
+    color: gray;
+    font-size: 16px;
 }
 .playlist{
     background-color: #242424;
@@ -97,7 +98,7 @@ body{
     color: #b3b3b3;
     font-weight: 600px;
     font-size: 14px;
-    margin: 8px 0px;
+    margin: 10px;
     padding: 16px 20px;
     border-radius: 12px;
 }
@@ -108,7 +109,6 @@ body{
 .playlist-content .text{
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
 }
 .playlist-content .title{
     font-weight: bold;
@@ -128,16 +128,83 @@ body{
     background-color: #fff;
     color:#000;
     font-size: 12px;
-    font-family: "DM Sans", sans-serif;
     padding: 10px;
     border: 0px;
     margin-top: 12px;
     text-decoration: none;
     text-transform: none;
 }
+/*PODCAST*/
+.podcast {
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 10px;
+    padding: 16px 20px;
+    border-radius: 12px;
+}
+
+.podcast .podcast-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.podcast-content .text {
+    padding-bottom: 14px;
+    color: #fff;
+}
+
+.podcast-content .title {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.podcast-content .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.podcast-content .podcast-button {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: 160px;
+    height: 37px;
+    font-weight: 800;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    padding: 10px;
+    border: 0px;
+    margin-top: 12px;
+    text-decoration: none;
+    text-transform: none;
+}
+.sidebar-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 45px;
+}
+.sidebar-links a {
+    color: #b3b3b3;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sidebar-links a:hover {
+    text-decoration: underline;
+}
 .sidebar .cookies{
     margin: 25px 20px;
-
 }
 .sidebar .cookies a{
     color: #b3b3b3;
@@ -178,12 +245,10 @@ body{
     font-size: 15px;
     font-weight: bold;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
     margin-bottom: 10px;
 }
 .premium .premium-subtitle{
     color: #fff;
-    font-family: "DM Sans", sans-serif;
     font-weight: bold;
     font-size: 15px;
     margin-top: 15px;
@@ -195,8 +260,90 @@ body{
     background-color: #fff;
     color: #000;
     font-size: 15px;
-    font-family: "DM Sans", sans-serif;
     padding: 14px 30px;
     cursor: pointer;
     flex-shrink: 0;
+}
+/*HEADER PRINCIPAL*/
+.main-container{
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 430px;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #121212;
+}
+.header-nav .navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-nav .navigation .left-arrow{
+    margin-right: 1.25rem;
+}
+.header-nav .navigation .right-arrow{
+    margin-right: 1.25rem;
+}
+.left-arrow, .right-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--bg-icon);
+    background-color: var(--bg-arrow-op);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.user-login{
+    display: flex;
+    align-items: center;
+}
+.header-search{
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+.header-search img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+.header-search input{
+    background: transparent;
+    border: none;
+    padding: 0px 100px 0px 12px;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+.user-login .subscribe{
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+}
+.user-login .sign-up{
+    width: 100px;
+    height: 48px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
 }

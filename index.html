@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
         integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
     <title>Spotify</title>
 </head>
+
 <body>
     <div class="sidebar">
         <nav class="sidebar__navigation">
@@ -40,7 +43,7 @@
                     <span class="fa fa-book"></span>
                     <h1><span>Sua Biblioteca</span></h1>
                 </button>
-                    <span class="fa fa-plus"></span>
+                <span class="fa fa-plus"></span>
             </div>
             <section class="playlist">
                 <div class="playlist-content">
@@ -51,6 +54,24 @@
                     </button>
                 </div>
             </section>
+            <section class="podcast">
+                <div class="podcast-content">
+                    <span class="text title">Que tal seguir um podcast novo?</span>
+                    <span class="text subtitle">Avisaremos você sobre novos episódios.</span>
+                    <button class="podcast-button">
+                        <span>Explore podcasts</span>
+                    </button>
+                </div>
+            </section>
+            <div class="sidebar-links">
+                <a href="">Legal</a>
+                <a href="">Centro de Privacidade</a>
+                <a href="">Política de Privacidade</a>
+                <a href="">Sobre anúncios</a>
+                <a href="">Acessibilidade</a>
+                <a href="">Notice at Collection</a>
+                <a href="">Your Privacy Choices</a>
+            </div>
             <div class="cookies">
                 <a href="">Cookies</a>
             </div>
@@ -62,14 +83,38 @@
             </div>
         </div>
     </div>
+    <main>
+        <div class="main-container">
+            <nav class="header-nav">
+                <div class="navigation">
+                    <button class="left-arrow">
+                        <img src="assets/assets/icons/small-left.png" alt="leftarrow">
+                    </button>
+                    <button class="right-arrow">
+                        <img src="assets/assets/icons/small-right.png" alt="rightarrow">
+                    </button>
+                </div>
+                <div class="header-search">
+                    <img src="assets/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?"/>
+                </div>
+                <div class="user-login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="sign-up">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
     <footer class="premium">
         <div class="text">
             <p class="premium-title">Testar o Premium de graça</p>
-            <P class="premium-subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios.Não precisa de cartão de crédito</P>
+            <P class="premium-subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios.Não
+                precisa de cartão de crédito</P>
         </div>
         <div class="premium-button">
             <button type="button">Inscreva-se grátis</button>
         </div>
     </footer>
 </body>
+
 </html>
