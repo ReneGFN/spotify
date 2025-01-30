@@ -347,3 +347,27 @@ body{
     font-weight: 700;
     border-radius: 40px;
 }
+.playlist-container{
+    height: 79vh;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: #121212;
+    margin-left: 445px;
+    position: absolute;
+    top: 100px;
+    width: 1400px;
+}
+.playlist-introduction #introduction{
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    margin-top: 50px;
+    margin-left: 28px;
+}
+.playlist-introduction .introduction-subtitle{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 28px;
+}
