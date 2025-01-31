@@ -1,0 +1,5 @@
+@media screen and(max-width: 1015px) {
+    .offerlist-item{
+        grid-template-columns: 1fr 1fr;
+    }
+}
