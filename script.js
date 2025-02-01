@@ -23,7 +23,6 @@ function displayResults(result, searchTerm) {
         limitedResults.forEach(element => {
             const artistCard = document.createElement("div");
             artistCard.classList.add("artist-card");
-
             artistCard.innerHTML = `
                 <div class="card-img">
                     <img class="artist-img" src="${element.urlImg}" alt="${element.name}">
@@ -36,7 +35,10 @@ function displayResults(result, searchTerm) {
                     <i class="fa fa-play"></i>
                 </div>
             `;
-
+            const playButton = artistCard.querySelector('.play');
+            playButton.addEventListener('click', () => {
+                window.open(element.spotifyUrl, '_blank');
+            });
             resultArtist.appendChild(artistCard);
         });
     }
